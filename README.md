@@ -1,2 +1,2 @@
-# MulheresTech
- Primeiro site da turma - Senac 2022
+# Mulheres.Tech
+ Primeiro site da turma Mulheres.Tech 2022.1.
