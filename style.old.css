@@ -38,7 +38,7 @@ a {
 
 /* Pseudo classe ":hover" → Ao passar o mouse sobre o elemento */
 a:hover {
-    color: rgb(235, 184, 165);
+    color: rgb(255, 69, 0);
     text-decoration: underline;
 }
 
@@ -82,9 +82,6 @@ body {
  *************************/
 
 #wrap>header {
-    border-radius: .3rem;
-    margin: .5rem;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
 
@@ -187,60 +184,4 @@ body {
 
     /* Evita efeito da margem do primeiro e ultimo filhos do elemento */
     overflow: auto;
-}
-
-#wrap>footer {
-    background-color: rgb(55, 73, 134);
-    border-radius: .5rem;
-    margin: .5rem;
-    margin-top: 0;
-    color: rgb(7, 32, 6);
-}
-
-#fsup {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px dotted;
-}
-
-#fsup a {
-    padding: .5rem;
-    text-align: center;
-    color: rgb(7, 32, 6);
-    text-decoration: none;
-    transition: .25s;
-    font-size: 1.5rem;
-}
-
-#fsup a:hover {
-    color: rgb(194, 212, 212);
-}
-
-#finf {
-    display: flex;
-    padding: .5rem;
-    justify-content: space-between;
-}
-
-#finf h4 {
-    margin: 0 0 .7rem 0;
-}
-
-#finf nav a {
-    display: block;
-    padding: .2rem 0;
-    font-size: .9rem;
-    color: rgba(234, 245, 215, 0.846);
-}
-
-#finf nav a:hover {
-    color: rgb(162, 194, 194);
-    text-decoration: wavy;
-}
-
-@media screen and (min-width: 426px) { 
-    #finf { 
-        justify-content: space-around;
-    }
 }
