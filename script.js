@@ -19,16 +19,16 @@
  * runApp() → Aplicativo principal
  * Este aplicativo é executado pela última linha deste código.
  */
- function runApp() {
+function runApp() {
 
   // Carrega a página inicial do site quando este iniciar:
-  loadPage('contacts');
+  loadPage('policies');
 
   /**
    * jQuery → Quando houver click em um elemento <a>, execute o aplicativo 
    * "routerLink":
    **/
-  $('a').click(routerLink);
+   $('a').click(routerLink);
 
 }
 
@@ -113,6 +113,9 @@ function loadPage(href) {
 
   });
 
+  // Atualiza URL da página:
+  // window.history.pushState({}, "", href);
+
 }
 
 /**
@@ -137,6 +140,16 @@ function setTitle(title = '') {
   }
 
 }
+
+/**
+ * Cria o menu de navegação complementar de sobre:
+ */
+var aboutMenu = `
+<a href="site"><i class="fa-solid fa-globe fa-fw"></i><span>Sobre o site</span></a>
+<a href="team"><i class="fa-solid fa-users fa-fw"></i><span>Quem somos</span></a>
+<a href="policies"><i class="fa-solid fa-user-lock fa-fw"></i><span>Sua privacidade</span></a>
+<a href="contacts"><i class="fa-solid fa-comments fa-fw"></i><span>Contatos</span></a>
+`;
 
 // jQuery → Executa aplicativo "runApp" quando o documento estiver pronto:
 $(document).ready(runApp);
